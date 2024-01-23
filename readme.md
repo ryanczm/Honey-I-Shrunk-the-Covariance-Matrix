@@ -1,5 +1,7 @@
 # Honey I Shrunk the Covariance Matrix
 
+ See [https://analytic-musings.com/2023/12/30/honey-covariance/](https://analytic-musings.com/2023/12/30/honey-covariance/) for full writeup.
+
 I replicate Wolf & Ledoit's -  _Honey: I Shrunk the Covariance Matrix (2003)_ paper, which showed how shrinking covariance matrices increases realized information ratios & decreases tracking error in active portfolio management/portfolio optimization. I replicate the results on modern data: US stock returns from 2005-2022.
 
 I then empirically confirm that active weights generated feeding the Ledoit-Wolf shrunk covariance matrix into the optimizer $\textbf{x}$ have higher similarity to the alpha (excess expected return forecast) $\alpha$ vector and lower turnover, as compared to the SCM.
